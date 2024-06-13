@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap");
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color: orange;
+    --quartiary-color: grey;
+    --font: "Playfair Display";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 70% 20% 10%;
+    grid-template-areas:
+    "header header header"
+    "navigation navigation navigation"
+    "content content aside"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    position: center;
+}
+
+nav{
+    grid-area: navigation;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-objects{
+    color: var(--primary-color);
+    margin: 3%;
+    padding: 2%;
+}
+
+main{
+    grid-area: content;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a{
+    font-size: 15px;
+    display: block;
+}
+
+.dropdown-hover {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.dropdown-hover:hover .dropdown-content{
+    font-size: 15px;
+    display: block;
+}
+
+.dropbtn {
+    font-family: var(--font);
+    font-size: 20px;
+    background-color: var(--tertiary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.side-by-side{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.inline-block{
+    display: inline;
+}
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    font-size: 60px;
+    padding-right: 2%;
+    border-right: solid var(--tertiary-color) 2px;
+    margin-left: 5%;
+}
+
+.subtitle1{
+    font-size: 20px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.text1{
+    font-size: 15px;
+    padding: 7px;
+}
+
+.border{
+    border: solid var(--secondary-color) 2px;
+    width: 100%;
+}
+
+.banner-orange{
+    padding: 5%;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 25px;
+    width: 80vw;
+    margin: 50px 10vw 0px 10vw;
+}
+
+.banner-orange-small{
+    padding: 1%;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 25px;
+    width: 80vw;
+    margin: 50px 10vw 0px 10vw;   
+}
+
+.orange-banner-objects{
+    color: var(--primary-color);
+    margin: 3%;
+    padding: 2%;
+}
+
+.banner-white{
+    padding: 5%;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 25px;
+    width: 80vw;
+    margin: 50px 10vw 0px 10vw;
+}
+
+.white-banner-objects{
+    color: var(--primary-color);
+    margin: 3%;
+    padding: 2%;
+}
+
+.banner-black{
+    padding: 5%;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 25px;
+    width: 80vw;
+    margin: 50px 10vw 0px 10vw;
+}
+
+.black-banner-objects{
+    color: var(--secondary-color);
+    margin: 3%;
+    padding: 2%;
+}
+
+.banner-grey{
+    padding: 5%;
+    flex-direction: column;
+    align-self: center;
+    background-color: var(--quartiary-color);
+    color: var(--tertiary-color);
+    border-radius: 25px;
+    width: 80vw;
+    margin: 50px 10vw 0px 10vw;
+}
+
+.footer-grey{
+    background-color: var(--quartiary-color);
+    color: var(--primary-color);
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.footer-grey div{
+    display: inline-block;
+}
+
+.picture{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+body div{
+    padding: 1px;
+}
+
+body p{
+    font-size: 120%;
+    margin-top: 65px;
+    margin-left: 5px;
+}
+
+nav img{
+    width: 25px;
+    margin-bottom: -4px;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}

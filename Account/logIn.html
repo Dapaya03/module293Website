@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hauptseite</title>
+    <meta name="description" content="Log in">
+    <meta name="keywords" content="News, Tecnology, Account, Log in">
+    <meta name="author" content="Yannick Büchler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/website/css/styleSheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="side-by-side">
+                <h1 class="main-title">Log in</h1>
+                <p class="subtitel-1">Log in to account</p>
+            </div>
+        </header>
+        <nav>
+            <div class="banner-orange-small">
+                <div class="dropdown nav-objects">
+                    <button onclick="toggleDropdown('myDropdown1')" class="dropbtn">
+                        <img src="/website/sources/error-icon.svg" alt="error icon">
+                        Lorem
+                    </button>
+                    <div id="myDropdown1" class="dropdown-content">
+                        <a href="#">Lorem</a>
+                    </div>
+                </div>
+                <div class="dropdown nav-objects">
+                    <a href="/website/index.html">
+                        <img src="/website/sources/home-icon.png" alt="home icon">
+                        Home
+                    </a>
+                </div>
+                <div class="dropdown nav-objects">
+                    <button onclick="toggleDropdown('myDropdown2')" class="dropbtn">
+                        <img src="/website/sources/news-icon.svg" alt="news icon">
+                        News
+                    </button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="/website/News/articlesWeekly.html">Weekly</a>
+                        <a href="#">Daily</a>
+                        <a href="#">Lorem</a>
+                    </div>
+                </div>
+                <div class="dropdown nav-objects">
+                    <button onclick="toggleDropdown('myDropdown3')" class="dropbtn">
+                        <img src="/website/sources/shop-icon.svg" alt="shop icon">
+                        Shop
+                    </button>
+                    <div id="myDropdown3" class="dropdown-content">
+                        <a href="#">Clothing</a>
+                        <a href="#">Technology</a>
+                    </div>
+                </div>
+                <div class="dropdown nav-objects">
+                    <button onclick="toggleDropdown('myDropdown4')" class="dropbtn">
+                        <img src="/website/sources/user-icon.svg" alt="user icon">
+                        Account
+                    </button>
+                    <div id="myDropdown4" class="dropdown-content">
+                        <a href="/website/Account/info.html">Infos</a>
+                        <a href="/website/Account/logIn.html">Log in</a>
+                        <a href="/website/Account/registration.html">Registration</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="banner-white">
+                <div class="subtitle1">Log in</div>
+                <div class="text1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptatibus sed
+                    molestias aliquid quam repudiandae asperiores aspernatur, laboriosam corrupti, ea eveniet quibusdam.
+                    Deserunt distinctio natus corporis ex sint veritatis similique. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorem nostrum debitis pariatur accusantium earum recusandae fuga
+                    itaque, ullam veniam voluptate est iste dolor qui rerum aspernatur quo officiis ut! Sunt?</div>
+            </div>
+            <div class="banner-orange">
+                <form>
+                    <fieldset>
+                        <legend>Account infos</legend>
+                        <div>
+                            <label class="form-label" for="username">User name *</label>
+                            <br>
+                            <input class="form-content" type="text" name="username" id="username" required>
+                        </div>
+                        <div>
+                            <label class="form-label" for="email">Email *</label>
+                            <br>
+                            <input class="form-content" type="email" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <label class="form-label" for="username">Password *</label>
+                            <br>
+                            <input class="form-content" type="text" name="passwort" id="passwort" required>
+                        </div>
+                    </fieldset>
+                    <input class="btn btn-success" type="submit" value="Submit">
+                    <input class="btn btn-danger" type="reset" value="Reset">
+                </form>
+            </div>
+        </main>
+        <aside>
+
+        </aside>
+        <footer>
+            <div class="footer-grey flex-container">
+                <div>
+                    Copy rights belong to Yannick Büchler
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/website/javaScript/javascript.js"></script>
+</body>
+
+</html>
