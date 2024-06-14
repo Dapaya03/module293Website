@@ -20,12 +20,12 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 70% 20% 10%;
+    grid-template-columns: 100%;
     grid-template-areas:
-    "header header header"
-    "navigation navigation navigation"
-    "content content content"
-    "footer footer footer";
+    "header"
+    "navigation"
+    "content"
+    "footer";
 }
 
 header{
@@ -63,6 +63,9 @@ footer{
 .dropdown-content{
     display: none;
     position: absolute;
+    left: 0px;
+    top: 100%;
+    margin-top: 5px;
 }
 
 .dropdown-content a{
@@ -72,7 +75,7 @@ footer{
 
 .dropdown-hover {
     position: relative;
-    display: inline-block;
+    display: none;
     font-size: 20px;
 }
 
@@ -147,7 +150,8 @@ footer{
     color: var(--primary-color);
     border-radius: 25px;
     width: 80vw;
-    margin: 50px 10vw 0px 10vw;   
+    margin: 50px 10vw 0px 10vw;
+    min-height: 145px;
 }
 
 .orange-banner-objects{
@@ -251,4 +255,39 @@ nav img{
 a{
     color: var(--primary-color);
     text-decoration: none;
+}
+
+#myDropdown3{
+    left: -10px;
+}
+
+#myDropdown4{
+    left: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 70% 20% 10%;
+        grid-template-areas:
+        "header header header"
+        "navigation navigation navigation"
+        "content content content"
+        "footer footer footer";
+    }
+
+    .dropdown-hover{
+        display: inline-block;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .dropdown-content{
+        left: auto;
+        top: auto;
+        margin-top: 0px;
+    }
 }
