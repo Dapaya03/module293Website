@@ -24,7 +24,7 @@ body{
     grid-template-areas:
     "header header header"
     "navigation navigation navigation"
-    "content content aside"
+    "content content content"
     "footer footer footer";
 }
 
@@ -48,10 +48,6 @@ nav{
 
 main{
     grid-area: content;
-}
-
-aside{
-    grid-area: aside;
 }
 
 footer{
@@ -199,7 +195,7 @@ footer{
     flex-direction: column;
     align-self: center;
     background-color: var(--quartiary-color);
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     border-radius: 25px;
     width: 80vw;
     margin: 50px 10vw 0px 10vw;
@@ -222,6 +218,11 @@ footer{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
 }
 
 .flex-container{
