@@ -195,7 +195,7 @@ footer{
     flex-direction: column;
     align-self: center;
     background-color: var(--quartiary-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 25px;
     width: 80vw;
     margin: 50px 10vw 0px 10vw;
