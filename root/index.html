@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Log-in</title>
-    <meta name="description" content="Log in to account">
-    <meta name="keywords" content="News, Tecnology, Account, Log in">
+    <meta charset="UTF-8">
+    <title>Mainpage</title>
+    <meta name="description" content="News of technology">
+    <meta name="keywords" content="News, Technology, Articles">
     <meta name="author" content="Yannick Büchler">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/website/styleSheet.css" rel="stylesheet">
+    <link href="styleSheet.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="grid-container">
         <header>
             <div class="side-by-side">
-                <h1 class="main-title">Log in</h1>
-                <p class="subtitel-1">Log in to account</p>
+                <h1 class="main-title">Main page</h1>
+                <p class="subtitle-1">The most important weekly news to technology</p>
             </div>
         </header>
         <nav>
             <div class="banner-orange-small">
                 <div class="dropdown nav-objects">
                     <button onclick="toggleDropdown('myDropdown1')" class="dropbtn">
-                        <img src="/website/sources/error-icon.svg" alt="error icon">
+                        <img src="sources/error-icon.svg" alt="error icon">
                         Lorem
                     </button>
                     <div id="myDropdown1" class="dropdown-content">
@@ -31,25 +31,25 @@
                     </div>
                 </div>
                 <div class="dropdown nav-objects">
-                    <a href="/website/index.html">
-                        <img src="/website/sources/home-icon.png" alt="home icon">
+                    <a href="index.html">
+                        <img src="sources/home-icon.png" alt="home icon">
                         Home
                     </a>
                 </div>
                 <div class="dropdown nav-objects">
                     <button onclick="toggleDropdown('myDropdown2')" class="dropbtn">
-                        <img src="/website/sources/news-icon.svg" alt="news icon">
+                        <img src="sources/news-icon.svg" alt="news icon">
                         News
                     </button>
                     <div id="myDropdown2" class="dropdown-content">
-                        <a href="/website/News/articlesWeekly.html">Weekly</a>
+                        <a href="News/articlesWeekly.html">Weekly</a>
                         <a href="#">Daily</a>
                         <a href="#">Lorem</a>
                     </div>
                 </div>
                 <div class="dropdown nav-objects">
                     <button onclick="toggleDropdown('myDropdown3')" class="dropbtn">
-                        <img src="/website/sources/shop-icon.svg" alt="shop icon">
+                        <img src="sources/shop-icon.svg" alt="shop icon">
                         Shop
                     </button>
                     <div id="myDropdown3" class="dropdown-content">
@@ -59,49 +59,34 @@
                 </div>
                 <div class="dropdown nav-objects">
                     <button onclick="toggleDropdown('myDropdown4')" class="dropbtn">
-                        <img src="/website/sources/user-icon.svg" alt="user icon">
+                        <img src="sources/user-icon.svg" alt="user icon">
                         Account
                     </button>
                     <div id="myDropdown4" class="dropdown-content">
-                        <a href="/website/Account/info.html">Infos</a>
-                        <a href="/website/Account/logIn.html">Log in</a>
-                        <a href="/website/Account/registration.html">Registration</a>
+                        <a href="Account/info.html">Infos</a>
+                        <a href="Account/logIn.html">Log in</a>
+                        <a href="Account/registration.html">Registration</a>
                     </div>
                 </div>
             </div>
         </nav>
         <main>
             <div class="banner-white">
-                <div class="subtitle1">Log in</div>
+                <div class="subtitle1">What is it?</div>
                 <div class="text1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptatibus sed
                     molestias aliquid quam repudiandae asperiores aspernatur, laboriosam corrupti, ea eveniet quibusdam.
                     Deserunt distinctio natus corporis ex sint veritatis similique. Lorem ipsum dolor sit amet
                     consectetur, adipisicing elit. Dolorem nostrum debitis pariatur accusantium earum recusandae fuga
                     itaque, ullam veniam voluptate est iste dolor qui rerum aspernatur quo officiis ut! Sunt?</div>
             </div>
-            <div class="banner-orange">
-                <form>
-                    <fieldset>
-                        <legend>Account infos</legend>
-                        <div>
-                            <label class="form-label" for="username">User name *</label>
-                            <br>
-                            <input class="form-content" type="text" name="username" id="username" required>
-                        </div>
-                        <div>
-                            <label class="form-label" for="email">Email *</label>
-                            <br>
-                            <input class="form-content" type="email" name="email" id="email" required>
-                        </div>
-                        <div>
-                            <label class="form-label" for="username">Password *</label>
-                            <br>
-                            <input class="form-content" type="text" name="passwort" id="passwort" required>
-                        </div>
-                    </fieldset>
-                    <input class="btn btn-success" type="submit" value="Submit">
-                    <input class="btn btn-danger" type="reset" value="Reset">
-                </form>
+            <div class="banner-grey">
+                <div class="subtitle1">Who are we?</div>
+                <div class="text1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptatibus sed
+                    molestias aliquid quam repudiandae asperiores aspernatur, laboriosam corrupti, ea eveniet quibusdam.
+                    Deserunt distinctio natus corporis ex sint veritatis similique. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorem nostrum debitis pariatur accusantium earum recusandae fuga
+                    itaque, ullam veniam voluptate est iste dolor qui rerum aspernatur quo officiis ut! Sunt?</div>
+                <img class="picture" src="/website/sources/people.jpg" alt="Us">
             </div>
         </main>
         <aside>
@@ -114,8 +99,8 @@
                 </div>
             </div>
         </footer>
+        <script src="javascript.js"></script>
     </div>
-    <script src="/website/javascript.js"></script>
 </body>
 
 </html>
