@@ -9,6 +9,7 @@
     <meta name="author" content="Yannick Büchler">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styleSheet.css" rel="stylesheet">
+    <link type="image/png" sizes="16x16" rel="icon" href="sources/icons8-website-16.png">
 </head>
 
 <body>
@@ -18,13 +19,13 @@
                 <h1 class="main-title">Main page</h1>
                 <p class="subtitle-1">The most important weekly news to technology</p>
             </div>
-        </header>
-        <nav>
-            <form method="get">
+            <form class="search-banner" method="get">
                 <label for="query">Search:</label>
                 <input type="text" id="query" name="query">
                 <button type="submit">Search</button>
             </form>
+        </header>
+        <nav>
             <div class="banner-orange-small">
                 <div class="dropdown nav-objects">
                     <button onclick="toggleDropdown('myDropdown1')" class="dropbtn">
@@ -118,6 +119,14 @@
                     consectetur, adipisicing elit. Dolorem nostrum debitis pariatur accusantium earum recusandae fuga
                     itaque, ullam veniam voluptate est iste dolor qui rerum aspernatur quo officiis ut! Sunt?</div>
             </div>
+            <div class="banner-black">
+                <div class="subtitle1">What is it?</div>
+                <div class="text1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptatibus sed
+                    molestias aliquid quam repudiandae asperiores aspernatur, laboriosam corrupti, ea eveniet quibusdam.
+                    Deserunt distinctio natus corporis ex sint veritatis similique. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorem nostrum debitis pariatur accusantium earum recusandae fuga
+                    itaque, ullam veniam voluptate est iste dolor qui rerum aspernatur quo officiis ut! Sunt?</div>
+            </div>
             <div class="banner-grey">
                 <div class="subtitle1">Who are we?</div>
                 <div class="text1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptatibus sed
@@ -131,7 +140,8 @@
         <footer>
             <div class="footer-grey flex-container">
                 <div>
-                    Copy rights belong to Yannick Büchler
+                    Copy rights belong to Yannick Büchler <br>
+                    Icons from <a target="_blank" href="https://icons8.com">Icons8</a>
                 </div>
             </div>
         </footer>

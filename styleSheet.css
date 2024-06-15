@@ -3,7 +3,7 @@
 :root{
     --primary-color: black;
     --secondary-color: white;
-    --tertiary-color: orange;
+    --tertiary-color: darkorange;
     --quartiary-color: grey;
     --font: "Playfair Display";
 }
@@ -58,6 +58,7 @@ footer{
     position: relative;
     display: inline-block;
     font-size: 20px;
+    margin-top: 5px;
 }
 
 .dropdown-content{
@@ -149,9 +150,9 @@ footer{
     background-color: var(--tertiary-color);
     color: var(--primary-color);
     border-radius: 25px;
-    width: 80vw;
-    margin: 50px 10vw 0px 10vw;
-    min-height: 145px;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    min-height: 180px;
 }
 
 .orange-banner-objects{
@@ -169,6 +170,7 @@ footer{
     border-radius: 25px;
     width: 80vw;
     margin: 50px 10vw 0px 10vw;
+    display: block;
 }
 
 .white-banner-objects{
@@ -181,11 +183,12 @@ footer{
     padding: 5%;
     flex-direction: column;
     align-self: center;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 25px;
     width: 80vw;
     margin: 50px 10vw 0px 10vw;
+    display: none;
 }
 
 .black-banner-objects{
@@ -237,14 +240,21 @@ footer{
     gap: 2rem;
 }
 
+.search-banner{
+    margin-top: 20px;
+}
+
+header form{
+    text-align: center;
+}
+
 body div{
     padding: 1px;
 }
 
 body p{
     font-size: 120%;
-    margin-top: 65px;
-    margin-left: 5px;
+    margin-left: 27px;
 }
 
 nav img{
@@ -257,12 +267,58 @@ a{
     text-decoration: none;
 }
 
+.banner-white a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.banner-black a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
 #myDropdown3{
     left: -10px;
 }
 
 #myDropdown4{
     left: -15px;
+}
+
+@media screen and (min-width: 405px) {
+
+    .banner-orange-small{
+        min-height: 145px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+
+    body p{
+        margin-top: 65px;
+        margin-left: 5px;
+    }
+    .banner-orange-small{
+        width: 80vw;
+        margin: 50px 10vw 0px 10vw;
+    }
+
+    .search-banner{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-areas:
+        "header header"
+        "navigation navigation"
+        "content content"
+        "footer footer";
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -289,5 +345,52 @@ a{
         left: auto;
         top: auto;
         margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    .banner-black{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+    }
+
+    .banner-grey{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+    }
+
+    .banner-orange{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+    }
+
+    .banner-white{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root{
+        --tertiary-color: orange;
+    }
+
+    body{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .banner-white{
+        display: none;
+    }
+
+    .banner-black{
+        display: block;
     }
 }
