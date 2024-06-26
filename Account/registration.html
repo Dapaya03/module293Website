@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Regirstration</title>
+    <title>Registration</title>
     <meta name="description" content="Make a new account">
     <meta name="keywords" content="News, Tecnology, Account, Registration">
     <meta name="author" content="Yannick Büchler">
@@ -107,45 +107,83 @@
         </nav>
         <main>
             <div class="banner-orange">
-                <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+                <form action="https://gibm.becknet.ch/formular/formular.php" method="post"
+                    onsubmit="return validateForm()">
                     <fieldset>
-                        <legend>Account infos</legend>
+                        <legend>Account Infos</legend>
                         <div>
-                            <label class="form-label">Gender *</label>
-                            <br>
-                            <input class="form-content" type="checkbox" name="gender[]" value="Woman" id="woman">
-                            <span class="form-content">Woman</span>
-                            <input class="form-content" type="checkbox" name="gender[]" value="Man" id="man">
-                            <span class="form-content">Man</span>
-                            <input class="form-content" type="checkbox" name="gender[]" value="Other">
-                            <span class="form-content">Other</span>
+                            <label class="form-label">Gender *</label><br>
+                            <input class="form-content" type="radio" name="gender" value="Woman" id="woman" required>
+                            <label for="woman" class="form-content">Woman</label>
+                            <input class="form-content" type="radio" name="gender" value="Man" id="man" required>
+                            <label for="man" class="form-content">Man</label>
+                            <input class="form-content" type="radio" name="gender" value="Other" id="other" required>
+                            <label for="other" class="form-content">Other</label>
                         </div>
                         <div>
-                            <label class="form-label" for="vorname">First name</label>
-                            <br>
+                            <label class="form-label" for="vorname">First Name</label><br>
                             <input class="form-content" type="text" name="vorname" id="vorname" minlength="2">
                         </div>
                         <div>
-                            <label class="form-label" for="nachname">Last name</label>
-                            <br>
+                            <label class="form-label" for="nachname">Last Name</label><br>
                             <input class="form-content" type="text" name="nachname" id="nachname">
                         </div>
                         <div>
-                            <label class="form-label" for="username">User name *</label>
-                            <br>
+                            <label class="form-label" for="username">Username *</label><br>
                             <input class="form-content" type="text" name="username" id="username" required>
                         </div>
                         <div>
-                            <label class="form-label" for="email">Email *</label>
-                            <br>
+                            <label class="form-label" for="email">Email *</label><br>
                             <input class="form-content" type="email" name="email" id="email" required>
                         </div>
                         <div>
-                            <label class="form-label" for="username">Password *</label>
-                            <br>
-                            <input class="form-content" type="text" name="passwort" id="passwort" required>
+                            <label class="form-label" for="passwort">Password *</label><br>
+                            <input class="form-content" type="password" name="passwort" id="passwort" required>
+                        </div>
+                        <div>
+                            <label class="form-label" for="passwort2">Confirm Password *</label><br>
+                            <input class="form-content" type="password" name="passwort2" id="passwort2" required>
+                        </div>
+                        <div>
+                            <label class="form-label" for="phone">Phone</label><br>
+                            <input class="form-content" type="tel" name="phone" id="phone"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        </div>
+                        <div>
+                            <label class="form-label" for="dob">Date of Birth</label><br>
+                            <input class="form-content" type="date" name="dob" id="dob">
+                        </div>
+                        <div>
+                            <label class="form-label" for="website">Website</label><br>
+                            <input class="form-content" type="url" name="website" id="website"
+                                placeholder="https://example.com">
+                        </div>
+                        <div>
+                            <label class="form-label" for="country">Country</label><br>
+                            <select class="form-content" name="country" id="country">
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Austria">Austria</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">Newsletter</label><br>
+                            <input class="form-content" type="radio" name="newsletter" value="yes" id="newsletter-yes">
+                            <label for="newsletter-yes">Yes</label>
+                            <input class="form-content" type="radio" name="newsletter" value="no" id="newsletter-no">
+                            <label for="newsletter-no">No</label>
+                        </div>
+                        <div>
+                            <label class="form-label" for="hobbies">Hobbies</label><br>
+                            <select class="form-content" name="hobbies[]" id="hobbies" multiple>
+                                <option value="Reading">Reading</option>
+                                <option value="Traveling">Traveling</option>
+                                <option value="Cooking">Cooking</option>
+                            </select>
                         </div>
                     </fieldset>
+
+                    <!-- Submit und Reset Buttons -->
                     <input class="btn btn-success" type="submit" value="Submit">
                     <input class="btn btn-danger" type="reset" value="Reset">
                 </form>

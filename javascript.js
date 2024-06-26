@@ -16,8 +16,18 @@ function toggleDropdown(dropdownId) {
     }
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches === '.dropdown-button') {
         closeAllDropdowns();
     }
+}
+
+function validateForm() {
+    var pass1 = document.getElementById('passwort').value;
+    var pass2 = document.getElementById('passwort2').value;
+    if (pass1 !== pass2) {
+        alert("Passwords do not match!");
+        return false;
+    }
+    return true;
 }
